@@ -1,8 +1,8 @@
 # SolScribe
 
-**Free voice dictation and transcription for Windows. Run speech recognition on your own computer, without a paid transcription subscription.**
+**Free voice dictation and transcription for Windows. Use local speech recognition without a subscription, or choose Groq as a cloud alternative.**
 
-SolScribe turns speech into text for everyday dictation, meeting notes, and audio files. Its default **Local** mode runs the multilingual Whisper `small` model on your PC. The model is included in the Windows installer, so local transcription does not require a subscription, an account, an API key, or uploading your audio to a transcription service.
+SolScribe turns speech into text for everyday dictation, meeting notes, and audio files. On a capable PC, use **Local** mode: the multilingual Whisper `small` model runs on your computer and is included in the Windows installer. No subscription, account, or API key is needed, and your audio stays on your device. If your PC is slower, **Groq API** is an optional cloud alternative that can do the transcription remotely.
 
 ## Download
 
@@ -36,10 +36,12 @@ Tell meeting participants that the meeting is being recorded and follow your loc
 
 Choose **Transcribe audio file**, select a file, and wait for processing. SolScribe supports WAV, MP3, M4A, MP4, MPEG, MPGA, OGG, WebM, and FLAC. The transcript is saved in the same `Transcriptions` folder.
 
-## Local and Groq recognition
+## Choose how speech is recognized
 
-- **Local** is the recommended starting point. Audio is processed on your PC and does not leave it for transcription. There is no subscription or API key. Speed depends on your computer.
-- **Groq API** is an optional cloud provider. When selected, audio is sent to Groq; its account terms, pricing, and usage limits apply. You do not need Groq to use SolScribe locally.
+- **Local** is a good choice if your PC handles Whisper comfortably or you want to keep recordings on your device. It needs no subscription, Groq account, or API key. Processing speed depends on your hardware.
+- **Groq API** is a convenient alternative for a slower PC or when you prefer cloud processing. Groq currently offers free API limits that may be enough for occasional, basic use, depending on the account and model. Limits can change or be reached, so check [Groq's current limits](https://console.groq.com/settings/limits). You need a Groq account and API key; when Groq is selected, audio is sent to Groq for transcription. [Create a Groq API key](https://console.groq.com/keys).
+
+Local transcription does not depend on Groq and remains available without a cloud account or subscription.
 
 ## Updates
 
@@ -49,9 +51,9 @@ SolScribe checks this repository for new releases and offers an update when one 
 
 # SolScribe українською
 
-**Безкоштовне голосове введення та транскрибування для Windows. Розпізнавання працює на твоєму комп’ютері — без платної підписки на сервіс транскрипції.**
+**Безкоштовне голосове введення та транскрибування для Windows. Можна розпізнавати мовлення локально без підписки або вибрати Groq як хмарну альтернативу.**
 
-SolScribe перетворює мовлення на текст для диктування, нотаток із мітингів та аудіофайлів. За замовчуванням використовується режим **Локально**: багатомовна модель Whisper `small` запускається на твоєму ПК. Модель входить до інсталятора, тому локальне розпізнавання не потребує підписки, акаунта, API-ключа чи надсилання аудіо до сервісу транскрипції.
+SolScribe перетворює мовлення на текст для диктування, нотаток із мітингів та аудіофайлів. На комп’ютері, який добре справляється з Whisper, обирай режим **Локально**: багатомовна модель Whisper `small` працює на твоєму ПК і входить до інсталятора. Підписка, акаунт чи API-ключ не потрібні, аудіо залишається на пристрої. Якщо комп’ютер повільний, можна вибрати **Groq API** — хмарний режим, де розпізнавання виконується віддалено.
 
 ## Завантаження
 
@@ -85,10 +87,12 @@ Windows може показати попередження SmartScreen, оскі
 
 Натисни **Транскрибувати аудіофайл**, вибери файл і дочекайся завершення. Підтримуються WAV, MP3, M4A, MP4, MPEG, MPGA, OGG, WebM і FLAC. Транскрипт буде в тій самій папці `Transcriptions`.
 
-## Локальне розпізнавання та Groq
+## Який режим розпізнавання обрати
 
-- **Локально** — рекомендований режим. Аудіо обробляється на твоєму ПК і не надсилається для транскрипції в інтернет. Підписка й API-ключ не потрібні. Швидкість залежить від комп’ютера.
-- **Groq API** — необов’язковий хмарний сервіс. Якщо його вибрати, аудіо надсилається до Groq; діють умови, тарифи та ліміти цього сервісу. Для локального користування SolScribe Groq не потрібен.
+- **Локально** — зручний вибір, якщо твій ПК нормально працює з Whisper або важливо, щоб записи не залишали пристрій. Підписка, акаунт Groq і API-ключ не потрібні. Швидкість залежить від комп’ютера.
+- **Groq API** — зручна альтернатива для повільнішого ПК або якщо тобі зручніше обробляти звук у хмарі. Groq зараз пропонує безкоштовні ліміти API, яких може вистачити для базового чи нерегулярного використання — залежно від акаунта й моделі. Ліміти можуть змінюватися або вичерпуватися, тому перевіряй [актуальні ліміти Groq](https://console.groq.com/settings/limits). Потрібні акаунт Groq та API-ключ; у цьому режимі аудіо надсилається до Groq. [Створи API-ключ Groq](https://console.groq.com/keys).
+
+Локальна транскрипція не залежить від Groq і доступна без хмарного акаунта чи підписки.
 
 ## Оновлення
 
